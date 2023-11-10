@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <body>
+        <nav class = "header">
+            <div class="head">
+                <img src="LOGO and TITLE.png" id="headTitle">
+            </div>
+            <div class = "navigation" id = "nav">
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation activeButton" id="btnHome" onclick="navClick(0)">HOME</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(1)">Alphabets and<br>Language</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(2)">Regular Expression Seatwork</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(3)">Regular Expression Quiz</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(4)">DFA</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(5)">NFA to DFA</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(6)">PUMPING LEMMA</button>
+                <canvas class="btnSeperator"></canvas>
+                <button class="btnNavigation" onclick="navClick(7)">Others</button>
+            </div>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+        </nav>
+        <div class ="content">
+
+            <div class = "cont contHome activeContent" style="flex-direction: column;">
+                <div class="section">
+                    <img src="IMG1.JPG" class="actImg">
+                    <div class="actText">
+                        <h3 class="txtTitle">ELSID RICK PANOLINO</h3>
+                        <h4 class="txtDescription">BSCS 2 B2</h4>
+                        <h5 class="txtExplanation">This portfolio contains seatwork and quizzes for this course. 
+                            This includes the picture of the activity, the background of the activity, an explanation of how I did the activity, and an explanation of the items where I got incorrect answers. This portfolio helps determine what I learned in this course and my progress.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "cont contAct1">
+                <div class="actText">
+                    <h3 class="txtTitle">LANGUAGE AND ALPHABET</h3>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h4 class="txtDescription">Seatwork</h4>
+                        <h4 class="txtDescription" style="font-size:1.5rem;">7/10</h4>
+                    </div>                    
+                    <h5 class="txtExplanation">Alphabets are a set of symbols used to construct a language. In this activity, we are giving the possible string accepted in the given language.
+                    </h5>
+                    <h5 class="txtExplanation">In this activity, I based on the given language to determine what the accepted language is, through analysis and common understanding. I am able to provide strings in some items but there are confusions in terms like odd or even. I thought at first that it is referring to the length of the string but I am also thinking that even means an equal number of a and b, in the end, I am not able to answer the first item. And for item no.5 I thought of odd being the numerical value of strings.
+                    </h5><br><br>
+                    <h5 class="txtExplanation" style="text-indent: 0;">POSSIBLE SOLUTION:
+                        <br><br><strong>1. aa, ab, ba, bb, aaaa, aaab, aaba, aabb, abba, abbb
+                        <br><br>5. 0, 1, 000, 001, 010, 011, 100, 101, 110, 111</strong>
+                    </h5>
+                </div>
+                <img src="00 ACCEPTED STRINGS.png" class="actImg" style="max-width: 750px;">
+            </div>
+
+            <div class = "cont contAct2">
+                <img src="01 REGULAR EXPRESSION.png" class="actImg">
+                <div class="actText">
+                    <h3 class="txtTitle">REGULAR EXPRESSION</h3>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h4 class="txtDescription">Seatwork</h4>
+                        <h4 class="txtDescription" style="font-size:1.5rem;"><font color = #bb0000>2</font>/10</h4>
+                    </div>
+                    <h5 class="txtExplanation">
+                        A regular expression is a language or string accepted by finite automata. A regular expression is shown as symbols and not as words it is similar to the expression in mathematics with operations and variables. In a regular expression, the operation used is multiply (and) and add(or). This is used to determine which string is accepted in finite automata.
+                    </h5>
+                    <h5 class="txtExplanation">
+                        First, I have no idea about it and I am not able to answer the problem, especially the complicated one. I have no idea about operations such as multiply and add. But later after the activity, I understand the topic and was able to answer the next activity.
+                    </h5>
+                    <h5 class="txtExplanation" style="text-indent: 0;">By applying what I learned, the possible solution for this activity are:
+                        <br><br><strong>1. RE = ((a+b)*aba(a+b)*bab(a+b)*)+((a+b)*bab(a+b)*aba(a+b)*)
+                        <br><br>2. RE =(a+b)*(aaa+aab+aba+abb+bbb+baa+bab+bba+bbb+bbb)</strong>
+                    </h5>
+                </div>
+            </div>
+            <div class = "cont contAct3">
+                <div class="actText">
+                    <h3 class="txtTitle">REGULAR EXPRESION</h3>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h4 class="txtDescription">Quiz</h4>
+                        <h4 class="txtDescription" style="font-size:1.5rem;">15/15</h4>
+                    </div>   
+                    <h5 class="txtExplanation">
+                        This quiz is also about regular expression. We are given a language and we are going to convert it into a regular expression. From what I learned in the last activity I learned how to convert it into regular expression. It is by multiplying for “and” and adding for “or” and also the symbol “*” that means any combination of string including the empty string.
+                    </h5>
+                </div>
+                <img src="02 REGULAR EXPRESSION 2.png" class="actImg">
+            </div>
+
+            <div class = "cont contAct4" style="flex-direction: column;">
+                <div class="section">
+                    <img src="03 DFA.png" class="actImg">
+                    <div class="actText">
+                        <h3 class="txtTitle">DETERMINISTIC FINITE AUTOMATA</h3>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <h4 class="txtDescription">Seatwork</h4>
+                            <h4 class="txtDescription" style="font-size:1.5rem;">15/15</h4>
+                        </div>  
+                        <h5 class="txtExplanation">
+                            A DFA is a finite-state machine that accepts or rejects a given string of symbols by running through a state sequence uniquely determined by the string.
+                            <br>A DFA is defined by a 5-tuple (Q, Σ, δ, q0, F), where:
+                            <br>- Q is a finite set of states
+                            <br>- Σ is a finite set of symbols called the alphabet
+                            <br>- q0 is the start state
+                            <br>- F is the set of accept states
+                            <br>- δ : Q × Σ → Q is the transition function
+                        </h5>
+                    </div>
+                </div>
+                <canvas class="btnSeperator" style="height: 3pt; width:100%;"></canvas>
+                <div class="section">
+                    <div class="actText">
+                        <h5 class="txtExplanation" style="margin-left: 8%;">
+                            In this activity, we are going to design a DFA based on a given language. My strategy is to think of the smallest accepted string and create a simple model that generates that string. Next, I will think of other accepted strings and add more states and transition that follows the accepted sting. If possible, I am creating a transition to itself to accept more possible strings but still considering the language. And lastly, add a transition from the final state to generate a more accepted string.                        </h5>
+                    </div>
+                    <img src="03 DFA 2.png" class="actImg">
+                </div>
+            </div>
+
+            <div class = "cont contAct5">
+                <div class="actText">
+                    <h3 class="txtTitle">NFA to DFA</h3>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h4 class="txtDescription">Exercise</h4>
+                        <h4 class="txtDescription" style="font-size:1.5rem;">10/10</h4>
+                    </div>  
+                    <h5 class="txtExplanation">
+                        A Non-Deterministic Finite Automaton (NFA) is a finite-state machine that accepts or rejects a given string of symbols by running through a state sequence that may not be uniquely determined by the string.
+                        <br>An NFA is defined by a 5-tuple (Q, Σ, δ, q0, F), where:
+                        <br>- Q is a finite set of states
+                        <br>- Σ is a finite set of symbols called the alphabet
+                        <br>- q0is the start state
+                        <br>- F is the set of accept states
+                        <br>- δ : Q × Σ → P(Q) is the transition function.
+                        <br>
+                        <br>The main difference between DFA and NFA is that in DFA, for each input symbol, there exists exactly one next state. In contrast, for an NFA, there may exist many paths for specific input from the current state to the next state.
+                    </h5>
+                    <h5 class="txtExplanation">
+                        In this activity I don’t really use the transition function in converting the DFA to NFA since the problem is simple I created the DFA and NFA separately.
+                    </h5>
+                </div>
+                <img src="04 NFA DFA.png" class="actImg">
+            </div>
+            <div class = "cont contAct6">
+                <img src="05 PUMPING LEMMA.png" class="actImg">
+                <div class="actText">
+                    <h3 class="txtTitle">PUMPING LEMMA</h3>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h4 class="txtDescription">Assignment</h4>
+                        <h4 class="txtDescription" style="font-size:1.5rem;">10/10</h4>
+                    </div>  
+                    <h5 class="txtExplanation">
+                        The pumping lemma is a method used in the theory of formal languages to prove that a language is not regular. It states that for any regular language L, there exists an integer pumping length P such that any string s in L of length greater than or equal to P can be divided into three pieces, s = xyz, satisfying the following conditions:
+                        <br><br>- xyiz ∈ L, for i ≥ 0
+                        <br><br>- |y| > 0
+                        <br><br>- |xy| ≤ P
+                    </h5>
+                    <br>
+                    <h5 class="txtExplanation">
+                        In this activity, I am aware that the language for strings of palindrome is not regular because it is one of the examples for PDA. That is why I choose to prove this language and it is also proven that it is not regular.
+                    </h5>
+
+                </div>
+            </div>
+            <div class = "cont contOthers" style="flex-direction: column; justify-content: center; background-color: rgba(0,0,0,0);">
+                <div class="contSection">
+                    <div class="actText">
+                        <h3 class="txtTitle">OTHER ACTIVITIES</h3>
+                        <h4 class="txtDescription">Video presentation</h4>
+                        <h5 class="txtExplanation">This video is about DFA and NFA we used the software Jflap to create a DFA and NFA based on the given language. In this activity I just used the converter built-in in the software to convert NFA to DFA.
+                        </h5>
+                        <a href="https://drive.google.com/file/d/1ffr_ZRGiSmAGonTxjJHJwi534dWX_N3N/view?usp=share_link" target="_blank">                    
+                            <img class="actImg" src="video SS.png" style="margin: 20pt auto; min-width: 90%;">
+                        </a>
+                        <!-- <a href="https://drive.google.com/file/d/1ffr_ZRGiSmAGonTxjJHJwi534dWX_N3N/view?usp=share_link" class="link" target="_blank">▶</a> -->
+                        <br><br><br>
+                        <h4 class="txtDescription">Reporting</h4>
+                        <h5 class="txtExplanation">The topic assigned for my reprot is subtopic from the variants of Turing machine which is Nondeterministic Turing Machine. Just like the difference between DFA and NFA, DTM has only one possible tansition for each input while NTM has multiple possible transition.
+                        </h5>
+                        <h5 class="txtExplanation">I learned the difference between the tuples and I also learned the method in searching for accepted string. I learned about depth search and breadth search, etc.
+                        </h5>
+                        <img class="actImg" src="Report SS.png" style="margin: 20pt auto; min-width: 90%;">
+                    </div>
+                </div>
+                <div class="contSection" style="width: 100%;">
+                    <div class="actText">
+                        <h3 class="txtTitle">EXAMPLES AND APPLICATIONS</h3>
+                        <h4 class="txtDescription">Finite State Machines</h4>
+                        <h5 class="txtExplanation">This finite machince is for the language <strong>L = {W ∈ {a,b}* | W is even}</strong>. 
+                            The way this machine works is it has one accept state and from the initial state it takes two input to reach the accept state. 
+                            From the accept state it transtion back to q1 where it count as one and going back to final state will give even length of W.
+                        </h5>
+                        <img class="actImg" src="10 FINITE AUTOMATA.png" style="margin: 20pt auto; min-width: 90%;">
+                        <h5 class="txtExplanation">
+                            Finite state machines are mathematical models of computation that can be in exactly one of a finite number of states at any given time. They are widely used in modeling application behavior (control theory), design of hardware digital systems, software engineering, compilers, network protocols, and computational linguistics. 
+                        </h5>
+                        <br><br><hr><br><br>
+                        <h4 class="txtDescription">Context Free Grammar</h4>
+                        <h5 class="txtExplanation">This context free grammar is for <strong>L = {W ∈ {a,b}* | W is palindrome}</strong> S produces string that is equal in both sides, if there is "a" in left there is also "a" in right this ensures that the string is palindrome.
+                            And if S produces "a" or "b" the expression ends with a string equal both sides and "a" or "b" in the center.
+                        </h5>
+                        <br><br><h4 class="txtDescription" style="text-align: center;">S -> aSa | bSb | a | b | ε </h4><br><br>
+                        <h5 class="txtExplanation">
+                            Context-free grammars (CFGs) are used in compilers and in particular for parsing, taking a string-based program and figuring out what it means. CFGs are used to define the high-level structure of a programming language. Figuring out how a particular string was derived tells us about its structure and meaning.
+                        </h5>
+                        <br><br><hr><br><br>
+                        <h4 class="txtDescription">Push-Down Automata</h4>
+                        <h5 class="txtExplanation">This PDA is for the language <strong>L = {W ∈ {0,1}* | W is palindrome}</strong>. It reads the first half of the string and push every element in a stack. The other half the element is popped, if the element matches the top of the stack in every pop and the remeining is an empty string, then the string is palindrome
+                        </h5>
+                        <img class="actImg" src="10 PDA.png" style="margin: 20pt auto; min-width: 90%;">
+                        <h5 class="txtExplanation">
+                            Pushdown automata (PDAs) are used in many real-life applications. One example is whenever your smartphone calculator calculates an arithmetic expression, it uses an implementation of the pushdown automata to evaluate it. It verifies that the parentheses are balanced. In the absence of parentheses, it makes sure that the multiplication operator has more precedence than the addition operator.
+                            PDAs are also used in compilers to parse programming languages. They are used to recognize context-free languages. PDAs are used to recognize languages that cannot be recognized by finite automata.
+                        </h5>
+                        <br><br><hr><br><br>
+                        <h4 class="txtDescription">Turing Machine</h4>
+                        <h5 class="txtExplanation">This TM is for the language <strong>L = {W ∈ {a,b,c}* | a<sup>n</sup>b<sup>n</sup>c<sup>n</sup>}</strong>. It replace the first a, b, and c in the tape by x, y, and z respectively . Thee process is repeated. The tapes is checked if there is still remaining a, b, or c and rejecting if there is existing while accepting if there is none.
+                        </h5>
+                        <img class="actImg" src="10 TM.png" style="margin: 20pt auto; min-width: 90%;">
+                        <h5 class="txtExplanation">
+                            Turing machine is a foundation of todays computer. The applications can be seen in todays computers such as solving binary and other complicated computations. They are used to model the behavior of any computer that is capable of running a program.
+                        </h5>
+
+                        <br><br><hr><br><br>
+
+                        <h4 class="txtDescription" style="font-size: 1.5rem;">References:</h4>
+                        <h5 class="txtExplanation" style="font-size: 0.5 rem;">
+                            <br>ChatGPT
+                            <br>Bing chat
+                            <br> Finite-state machine - Wikipedia. https://en.wikipedia.org/wiki/Finite-state_machine.
+                            <br> Finite State Machines | Brilliant Math & Science Wiki. https://brilliant.org/wiki/finite-state-machines/.
+                            <br> Finite State Machine Applications - UC Davis. https://web.cs.ucdavis.edu/~rogaway/classes/120/spring13/eric-applications.pdf.
+                            <br> Finite State Machines in Real Life - JavaScript in Plain English. https://javascript.plainenglish.io/finite-state-machines-in-real-life-65370b1b091e.
+                            <br> Applications of context free grammars in real life?. https://stackoverflow.com/questions/48037376/applications-of-context-free-grammars-in-real-life.
+                            <br> Applications of Context Free Grammar - OpenGenus IQ. https://iq.opengenus.org/applications-of-context-free-grammar/.
+                            <br> Context Free Grammar (CFG) - OpenGenus IQ. https://iq.opengenus.org/context-free-grammar/.
+                            <br> Difference Between Regular Expression and Context Free Grammar. https://pediaa.com/difference-between-regular-expression-and-context-free-grammar/.
+                            <br> Difference between regular expression and context-free grammar. https://euresisjournal.org/difference-between-regular-expression-and-context-free-grammar.
+                            <br> Regular Expression Vs Context Free Grammar - GeeksforGeeks. https://www.geeksforgeeks.org/regular-expression-vs-context-free-grammar/.
+                            <br> Regular vs Context Free Grammars - Stack Overflow. https://stackoverflow.com/questions/559763/regular-vs-context-free-grammars.
+                            <br> What is a real life example of push down automata? - Quora. https://www.quora.com/What-is-a-real-life-example-of-push-down-automata.
+                            <br> Real world uses of DFA,NFA,PDA and Turing machines. https://stackoverflow.com/questions/7459322/real-world-uses-of-dfa-nfa-pda-and-turing-machines.
+                            <br> Personal digital assistant - Wikipedia. https://en.wikipedia.org/wiki/Personal_digital_assistant.
+                            <br> What is Turing machine?: AI terms explained - AI For Anyone. https://www.aiforanyone.org/glossary/turing-machine.
+                            <br> Turing machine - Wikipedia. https://en.wikipedia.org/wiki/Turing_machine.
+                            <br> Real life turing machine implementation examples? : r/compsci - Reddit. https://www.reddit.com/r/compsci/comments/3z9b11/real_life_turing_machine_implementation_examples/.
+                            <br> Practical importance of Turing machines? - Computer Science Stack Exchange. https://cs.stackexchange.com/questions/9341/practical-importance-of-turing-machines.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+    </div>
+
+    <div class="endPage">
+        <button class="btnNextPrev prev" style="display: none;" onclick="prev()">BACK</button>
+        <button class="btnNextPrev next" onclick="next()">NEXT</button>
+    </div>
+    </body>
+</body>
+</html>
